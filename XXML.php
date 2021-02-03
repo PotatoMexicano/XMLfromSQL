@@ -1,10 +1,10 @@
 <?php
 
-require_once("../Controllers/Conexao.php");
-$table1 = "registros";
+require_once("../Controllers/Conexao.php"); // EDIT THIS
+$table1 = "registros"; //CHANGE THIS BY TABLE NAME
 header('Content-Type: text/xml');
 
-$connection = Conexao::getConnection();
+$connection = Conexao::getConnection(); //ADAPT THIS
 
 $stmt = $connection->query("SELECT * FROM ".$table1);
 $keys = $stmt->fetch(PDO::FETCH_ASSOC);
