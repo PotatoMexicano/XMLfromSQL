@@ -20,7 +20,7 @@ for ($i = 0; $i <=$size; $i++) {
         $str .=  $arr[$i];
     }else{
         if($i == 0){
-            $str .= $arr[$i].",";
+            //$str .= $arr[$i].",";
             $first_column = $arr[$i];
         }
         $str .= $arr[$i].",";
