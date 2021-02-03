@@ -2,7 +2,8 @@
 
 class XMLfromSQL
 {
-public static function generate($table,$connection){
+public static function generate($table,$connection): SimpleXMLElement
+{
     
     //How to use: 
     // another .php call for: $xml = XMLfromSQL::generate("table_name",$connection); 
