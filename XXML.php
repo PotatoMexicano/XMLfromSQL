@@ -20,7 +20,6 @@ for ($i = 0; $i <=$size; $i++) {
         $str .=  $arr[$i];
     }else{
         if($i == 0){
-            //$str .= $arr[$i].",";
             $first_column = $arr[$i];
         }
         $str .= $arr[$i].",";
@@ -35,7 +34,7 @@ for ($i = 0; $i <=$size; $i++) {
         //mount item with 'item' + id from frist column
 
         foreach ($row as $key => $value) {
-            $add->addChild($key, $value);
+            $add->addChild($key, htmlspecialchars($value));
             //add values in $add
         }
     }
